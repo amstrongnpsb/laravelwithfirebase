@@ -16,5 +16,6 @@ class FirebaseController extends Controller
  
         $databaseTicket = $firebase->createDatabase()->getReference('ticket');
         $data = $databaseTicket->getvalue();
+        @dd($data);
     }
 }
